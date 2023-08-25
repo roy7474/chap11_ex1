@@ -16,6 +16,6 @@ fhand = open(fname)
 for line in fhand:
     line = line.rstrip()
 
-    if re.findall(regex, line) != []:
+    if re.findall(regex, line) != []:                       #count the matches
         count +=1
 print(fname, ' has ', str(count))
